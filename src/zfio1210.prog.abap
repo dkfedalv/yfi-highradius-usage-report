@@ -1,11 +1,15 @@
 DATA at_data_alv  TYPE TABLE OF gty_output.
 
 CLASS lcl_handle_events DEFINITION.
+
   PUBLIC SECTION.
     METHODS:
-      on_link_click FOR EVENT link_click OF cl_salv_events_tree
-        IMPORTING columnname node_key.
+      on_link_click
+      FOR EVENT link_click OF cl_salv_events_tree
+      IMPORTING columnname node_key.
+
 ENDCLASS.
+
 CLASS lcl_handle_events IMPLEMENTATION.
   METHOD on_link_click.
     DATA: lt_bdc TYPE TABLE OF bdcdata.
