@@ -14,9 +14,9 @@
    </PROGDIR>
    <CUA>
     <ADM>
-     <ACTCODE>000003</ACTCODE>
-     <MENCODE>000026</MENCODE>
-     <PFKCODE>000003</PFKCODE>
+     <ACTCODE>000004</ACTCODE>
+     <MENCODE>000031</MENCODE>
+     <PFKCODE>000004</PFKCODE>
     </ADM>
     <STA>
      <RSMPE_STAT>
@@ -26,6 +26,14 @@
       <PFKCODE>000003</PFKCODE>
       <BUTCODE>0001</BUTCODE>
       <INT_NOTE>Standard for General List Output in Fullscreen Grid</INT_NOTE>
+     </RSMPE_STAT>
+     <RSMPE_STAT>
+      <CODE>SALV_TABLE</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>000004</ACTCODE>
+      <PFKCODE>000004</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>PF Status Screen D0100</INT_NOTE>
      </RSMPE_STAT>
     </STA>
     <FUN>
@@ -735,6 +743,29 @@
       <ICON_ID>@DJ@</ICON_ID>
       <FUN_TEXT>Spreadsheet...</FUN_TEXT>
       <PATH>A</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+      <PATH>B</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>CANC</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+      <PATH>A</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+      <PATH>X</PATH>
      </RSMPE_FUNT>
      <RSMPE_FUNT>
       <CODE>P+</CODE>
@@ -1672,6 +1703,27 @@
       <REF_CODE>&amp;MAINTAIN</REF_CODE>
       <REF_NO>001</REF_NO>
      </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000027</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>EXIT</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000028</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>CANC</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000029</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>BACK</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
     </MEN>
     <MTX>
      <RSMPE_MNLT>
@@ -1849,6 +1901,41 @@
       <PATH>A</PATH>
       <INT_NOTE>Sub STANDARD</INT_NOTE>
      </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000027</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Report</TEXT>
+      <PATH>R</PATH>
+      <INT_NOTE>Standard Supplement</INT_NOTE>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000028</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Edit</TEXT>
+      <PATH>E</PATH>
+      <INT_NOTE>Standard Supplement</INT_NOTE>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000029</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Goto</TEXT>
+      <PATH>G</PATH>
+      <INT_NOTE>Standard Supplement</INT_NOTE>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000030</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Extras</TEXT>
+      <PATH>A</PATH>
+      <INT_NOTE>Standard Supplement</INT_NOTE>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000031</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Environment</TEXT>
+      <PATH>V</PATH>
+      <INT_NOTE>Standard Supplement</INT_NOTE>
+     </RSMPE_MNLT>
     </MTX>
     <ACT>
      <RSMPE_ACT>
@@ -1910,6 +1997,31 @@
       <CODE>000003</CODE>
       <NO>04</NO>
       <MENUCODE>000025</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000004</CODE>
+      <NO>01</NO>
+      <MENUCODE>000027</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000004</CODE>
+      <NO>02</NO>
+      <MENUCODE>000028</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000004</CODE>
+      <NO>03</NO>
+      <MENUCODE>000029</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000004</CODE>
+      <NO>04</NO>
+      <MENUCODE>000030</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000004</CODE>
+      <NO>05</NO>
+      <MENUCODE>000031</MENUCODE>
      </RSMPE_ACT>
     </ACT>
     <BUT>
@@ -3145,6 +3257,24 @@
       <FUNCODE>&amp;PRT_VIEW</FUNCODE>
       <FUNNO>002</FUNNO>
      </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000004</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000004</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>CANC</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000004</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>EXIT</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
     </PFK>
     <SET>
      <RSMPE_STAF>
@@ -3691,6 +3821,18 @@
       <STATUS>SALV_STANDARD</STATUS>
       <FUNCTION>ZSUM</FUNCTION>
      </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>SALV_TABLE</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>SALV_TABLE</STATUS>
+      <FUNCTION>CANC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>SALV_TABLE</STATUS>
+      <FUNCTION>EXIT</FUNCTION>
+     </RSMPE_STAF>
     </SET>
     <DOC>
      <RSMPE_ATRT>
@@ -3752,6 +3894,26 @@
       <SUB_CODE>0001</SUB_CODE>
       <INT_NOTE>STANDARD_FULLSCREEN</INT_NOTE>
      </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>000004</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <NORM>X</NORM>
+      <INT_NOTE>PF Status Screen D0100</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000004</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>PF Status Screen D0100</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000004</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>PF Status Screen D0100</INT_NOTE>
+     </RSMPE_ATRT>
     </DOC>
    </CUA>
    <TPOOL>
@@ -3781,6 +3943,13 @@
     <item>
      <ID>S</ID>
      <KEY>S_AUART</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BSARK</KEY>
      <ENTRY>.</ENTRY>
      <LENGTH>9</LENGTH>
      <SPLIT>D</SPLIT>

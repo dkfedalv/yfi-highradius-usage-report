@@ -40,7 +40,8 @@ CLASS lcl_data_processing IMPLEMENTATION.
           vkorg     IN @ao_input->ar_vkorg AND
           auart     IN @ao_input->ar_auart AND
           erdat     IN @ao_input->ar_erdat AND
-          kunnr     IN @ao_input->ar_kunnr.
+          kunnr     IN @ao_input->ar_kunnr AND
+          bsark     IN @ao_input->ar_bsark.
   ENDMETHOD.
 
   METHOD prepare_data.
